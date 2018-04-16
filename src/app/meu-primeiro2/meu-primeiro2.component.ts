@@ -6,4 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meu-primeiro2.component.css']
 })
 export class MeuPrimeiro2Component {
+
 }

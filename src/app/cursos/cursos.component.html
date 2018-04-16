@@ -1,4 +1,12 @@
 <p>
-  cursos component!
+
+  Repositório curso: {{nomeRepositorio}}
 </p>
+  <ul>
+
+  <li *ngFor="let rep of repositorio" >
+    {{rep}}
+  </li>
+</ul>
+
 <app-cursos-detalhe></app-cursos-detalhe>

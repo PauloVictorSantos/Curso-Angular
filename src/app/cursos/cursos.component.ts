@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-cursos',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
-  constructor() { }
+  nomeRepositorio: any;
+  repositorio: string[] = ['java', 'angular', 'note'];
+
+  constructor() {
+    this.nomeRepositorio = 'http://github.com/PauloVictorSantos';
+  }
 
   ngOnInit() {
   }
