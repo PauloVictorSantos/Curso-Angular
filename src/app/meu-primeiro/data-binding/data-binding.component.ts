@@ -7,10 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 
 
-export class DataBindingComponent implements  OnInit {
+
+export class DataBindingComponent  {
 
   url: string = 'https://github.com';
   cursoAngular:boolean =true;
+
   getValor() {
     return 1;
   }
@@ -21,7 +23,7 @@ export class DataBindingComponent implements  OnInit {
    botaoclicado(){
       alert();
    }
-  valorAtual: string = "";
+ /* valorAtual: string = "";
   onKeyUp( evento: KeyboardEvent) {
     this.valorAtual = <HTMLInputElement>(evento.target).value;
   }
@@ -30,10 +32,9 @@ export class DataBindingComponent implements  OnInit {
     this.valorSalvo = valor;
   }
   isMouseOver: boolean = false;
-  onMouseOverOut(){
+  onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
-  }
-
+  }*/
 
 
 
