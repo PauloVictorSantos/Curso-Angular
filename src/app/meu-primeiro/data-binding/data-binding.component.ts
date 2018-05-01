@@ -12,7 +12,7 @@ export class DataBindingComponent  {
 
   url: string = 'https://github.com';
   cursoAngular:boolean =true;
-
+  nomeDocurso:string = 'angular';
   getValor() {
     return 1;
   }

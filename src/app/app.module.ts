@@ -9,11 +9,12 @@ import {CursosModule} from './cursos/cursos.module';
 import { DataBindingComponent } from './meu-primeiro/data-binding/data-binding.component';
 import {FormsModule} from '@angular/forms';
 import { MeuFormComponent } from './meu-form/meu-form.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, MeuPrimeiroComponent, MeuPrimeiro2Component, DataBindingComponent, MeuFormComponent
+    AppComponent, MeuPrimeiroComponent, MeuPrimeiro2Component, DataBindingComponent, MeuFormComponent, InputPropertyComponent
   ],
   imports: [
     BrowserModule,
