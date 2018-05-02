@@ -13,6 +13,7 @@ export class DataBindingComponent  {
   url: string = 'https://github.com';
   cursoAngular:boolean =true;
   nomeDocurso:string = 'angular';
+  valorInicial = 15;
   getValor() {
     return 1;
   }
@@ -36,6 +37,9 @@ export class DataBindingComponent  {
     this.isMouseOver = !this.isMouseOver;
   }*/
 
+  OnMudouValor(evento){
+    console.log(evento.novoValor);
+  }
 
 
 }

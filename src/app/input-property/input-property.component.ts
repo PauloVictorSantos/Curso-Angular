@@ -10,6 +10,8 @@ export class InputPropertyComponent implements OnInit {
   @Input() nome: string = '';
   constructor() { }
 
+
+
   ngOnInit() {
   }
 

@@ -33,7 +33,8 @@
 <section class="input-output-properties">
   <article>
     <h3>Input/Output properties</h3>
-<app-curso [nome]="nomeDocurso"></app-curso>
+    <app-curso [nome]="nomeDocurso"></app-curso>
+    <contador [valor]="valorInicial" (mudouValor)="OnMudouValor($event)"></contador>
   </article>
 </section>
 
