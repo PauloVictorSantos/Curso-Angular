@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import {Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'contador',
@@ -11,14 +11,16 @@ export class OutputPropertyComponent implements OnInit {
   @Input() valor: number = 0;
 
   @Output() mudouValor = new EventEmitter();
+  @ViewChild('campoInput') campValorInput: ElementRef;
 
   incrementa() {
-    this.valor++;
+    console.log(this.campValorInput.nativeElement.value);
+    this.campValorInput.nativeElement.value++;
     this.mudouValor.emit({novoValor:this.valor});
   }
 
   decrementa() {
-    this.valor--;
+    this.campValorInput.nativeElement.value--;
     this.mudouValor.emit({novoValor:this.valor});
   }
 

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, ngOnChanges} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-ciclo',
@@ -6,7 +6,7 @@ import {Component, Input, OnInit, ngOnChanges} from '@angular/core';
   styleUrls: ['./ciclo.component.css']
 })
 
-export class CicloComponent implements OnInit, ngOnChanges {
+export class CicloComponent implements OnInit {
 
   @Input() valorInicial: number = 10;
 
